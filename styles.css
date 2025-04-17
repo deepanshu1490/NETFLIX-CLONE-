@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #fff;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .nav-links li:hover {
+    color: #e50914;
+  }
+  
+  .profile img {
+    width: 35px;
+    border-radius: 4px;
+  }
+  
+  .hero {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/7ab4299f-e436-4c6f-b489-c457e3512f88/823a2895-225e-4ef9-8a03-4a1f178d6b2c/IN-en-20240408-popsignuptwoweeks-perspective_alpha_website_medium.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    position: relative;
+    background-image: url("https://www.tallengestore.com/cdn/shop/products/stranger_things_13_139fead2-a70d-4ea9-acdf-dca20dd885a5.jpg?v=1514020449");
+    
+}
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to top, #111, transparent);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .buttons .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .play {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .info {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: #fff;
+  }
+  
+  .row {
+    padding: 20px 40px;
+    margin-top: -80px;
+  }
+  
+  .row h2 {
+    margin-bottom: 10px;
+  }
+  
+  .row-posters {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .poster {
+    width: 150px;
+    border-radius: 4px;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .poster:hover {
+    transform: scale(1.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-image img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  .feature-text {
+    max-width: 600px;
+  }
+  
+  .feature-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
